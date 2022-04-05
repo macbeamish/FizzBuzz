@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>Hunito: A Coding Project by Mac Beamish</title>
+    <title>FizzBuzz: A Coding Project by Mac Beamish</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,7 +26,7 @@
 <!-- Nav -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand brand-nav" href="#"><img src="img/white-on-red-logo-only.png" class="pb-1" height="25" alt="logo-icon"> APP NAME</a>
+        <a class="navbar-brand brand-nav" href="#"><img src="img/white-on-red-logo-only.png" class="pb-1" height="25" alt="logo-icon"> FIZZBUZZ</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,7 @@
                     <a class="nav-link" href="code.html">The Code</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="-blank" href="#">Git Repo</a>
+                    <a class="nav-link" target="-blank" href="https://github.com/macbeamish/FizzBuzz">Git Repo</a>
                 </li>
                 
             </ul>
@@ -57,9 +57,50 @@
     <main class="flex-shrink-0">
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-2">
-                <div class="col">
+                <div class="col-lg-4 col border-end border-2">
+                    <h1 class="display-5 fw-bold 1h-1 mb-3">Tekau²: A Coding Project</h1>
+                    <h4 class="lead">
+                         A <strong>JavaScript</strong> project highlighting the use and utility of loops. 
+                         This program displays the numbers in a series from a given start point to a given end point, 
+                         increasing by a given increment. Even numbers will be displayed in <strong>Bold</strong>.
+                    </h4>
+                    <h2>Instructions</h2>
+                    <p>
+                        Enter a starting value, Enter an end value, pick an increment. Press start,
+                        
+                    </p>
                 </div>
-                <div class="col">     
+                <div class="col-lg-8 col">   
+                    <div>
+                        <h5>Enter Values</h5>
+                        <form class="row gy-2 gx-3" action="">
+                            <div class="col">
+                                <label for="startValue">Starting Value</label>
+                                <input id="startValue" type="number" class="form-control p-1" placeholder="Start Value" value=0 aria-label="Start Value">                                                           
+                            </div>
+                            <div class="col">
+                                <label for="endValue">Ending Value</label>
+                                <input id="endValue" type="number" class="form-control p-1" placeholder="End Value" value=100  aria-label="End Value">
+                            </div>
+                            <div class="col">
+                                <label for="increment">Increment</label>
+                                <input id="increment" type="number" class="form-control p-1" placeholder="Increment Value" value=1  aria-label="Increment Value">
+                            </div>
+                            <div class="col-12 d-flex">
+                                <div class="pt-2">
+                                    <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Go!</button>
+                                </div>
+                            </div>
+                        </form> 
+                        <h2 class="mt-5 border-bottom border-2"> Results</h2>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-sm">
+                                <tbody id="results">
+                                    <!-- Results go here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>  
                 </div>
             </div>     
         </div>
